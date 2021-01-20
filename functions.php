@@ -178,6 +178,9 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		}
 	}
 }
+
+/* new email function */
+
 function concat_email_field($field_value,$field_name){
 	$result = $field_name.$field_value;
 	return $result;
