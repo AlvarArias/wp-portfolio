@@ -187,14 +187,14 @@ function concat_email_field($field_value,$field_name){
 }
 function print_email($fields){
 	$HTML_00 = '
-<h3>Requestor information</h3>
+<h3>Information</h3>
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
 	<tr>
-		<td align="center" valign="top" bgcolor="#F2F2F2">Förnamn</td>	
+		<td align="center" valign="top" bgcolor="#F2F2F2">First name</td>	
 		<td align="center" valign="top">'.$fields['form_fields']['name1'].'</td>	
 	</tr>
 	<tr>
-		<td align="center" valign="top" bgcolor="#F2F2F2">Efterrnamn</td>	
+		<td align="center" valign="top" bgcolor="#F2F2F2">Second name</td>	
 		<td align="center" valign="top">'.$fields['form_fields']['field_9700c77'].'</td>	
 	</tr>
 	<tr>
@@ -202,7 +202,7 @@ function print_email($fields){
 		<td align="center" valign="top">'.$fields['form_fields']['email1'].'</td>	
 	</tr>
 	<tr>
-		<td align="center" valign="top" bgcolor="#F2F2F2">Telefonnummer</td>	
+		<td align="center" valign="top" bgcolor="#F2F2F2">Phonenumber</td>	
 		<td align="center" valign="top">'.$fields['form_fields']['tel1'].'</td>	
 	</tr>
 	<tr>
@@ -218,31 +218,31 @@ function print_email($fields){
 		<td align="center" valign="top">'.$fields['form_fields']['field_6ee6328'].'</td>	
 	</tr>
 	<tr>
-		<td align="center" valign="top" bgcolor="#F2F2F2">Leveransadress</td>	
+		<td align="center" valign="top" bgcolor="#F2F2F2">adress to send</td>	
 		<td align="center" valign="top">'.$fields['form_fields']['field_3dd9a06'].'</td>	
 	</tr>
 </table>
 ';
 
-	//Ung HälsoGrisskinka
+	//title
 	$HTML_01_title = "";
 	$HTML_01a = "";
 	$HTML_01b = "";
 
-	//Ung HälsoGrisskinka title
+	//title
 	if($fields['form_fields']['field_768f841'] != '' or $fields['form_fields']['field_9b65d74'] != ''){
-		$HTML_01_title = '<h3>Ung HälsoGrisskinka</h3>';
+		$HTML_01_title = '<h3>Title product/h3>';
 	}
-	//Ung HälsoGrisskinka first item
+	//first item
 	if($fields['form_fields']['field_768f841'] != ''){
 		$HTML_01a = '
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
 	<tr bgcolor="#F2F2F2">
-		<td align="center" valign="top">Sockersaltad</td>	
-		<td align="center" valign="top">Antal</td>	
-		<td align="center" valign="top">Önskad vikt</td>	
-		<td align="center" valign="top">Tilllagning</td>	
-		<td align="center" valign="top">Griljering</td>	
+		<td align="center" valign="top">Product</td>	
+		<td align="center" valign="top">Atrib 1</td>	
+		<td align="center" valign="top">Atrib 2</td>	
+		<td align="center" valign="top">Atrib 3</td>	
+		<td align="center" valign="top">Atrib 4</td>	
 	</tr>
 	<tr>
 		<td align="center" valign="top">'.$fields['form_fields']['field_0869156'].'</td>
@@ -255,16 +255,16 @@ function print_email($fields){
 <br />
 ';
 	}
-	//Ung HälsoGrisskinka second item
+	//second item
 	if($fields['form_fields']['field_9b65d74'] != ''){
 		$HTML_01b = '
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
 	<tr bgcolor="#F2F2F2">
-		<td align="center" valign="top">Lättrökt</td>	
-		<td align="center" valign="top">Antal</td>	
-		<td align="center" valign="top">Önskad vikt</td>	
-		<td align="center" valign="top">Tilllagning</td>	
-		<td align="center" valign="top">Griljering</td>	
+		<td align="center" valign="top">Produc</td>	
+		<td align="center" valign="top">Atrib 1</td>	
+		<td align="center" valign="top">Atrib 2</td>	
+		<td align="center" valign="top">Atrib 3</td>	
+		<td align="center" valign="top">Atrib 4</td>	
 	</tr>
 	<tr>
 		<td align="center" valign="top">'.$fields['form_fields']['field_39ffe77'].'</td>
@@ -278,25 +278,25 @@ function print_email($fields){
 	}
 	$HTML_01 = $HTML_01_title.$HTML_01a.$HTML_01b;
 	
-	//HälsoGrisskinka
+	// title
 	$HTML_02_title = "";
 	$HTML_02a = "";
 	$HTML_02b = "";
 
-	//HälsoGrisskinka title
+	// title
 	if($fields['form_fields']['field_e178560'] != '' or $fields['form_fields']['field_74d7751'] != ''){
-		$HTML_02_title = '<h3>HälsoGrisskinka</h3>';
+		$HTML_02_title = '<h3>Title product</h3>';
 	}
-	//HälsoGrisskinka first item
+	//first item
 	if($fields['form_fields']['field_e178560'] != ''){
 		$HTML_02a = '
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
 	<tr bgcolor="#F2F2F2">
-		<td align="center" valign="top">Sockersaltad</td>	
-		<td align="center" valign="top">Antal</td>	
-		<td align="center" valign="top">Önskad vikt</td>	
-		<td align="center" valign="top">Tilllagning</td>	
-		<td align="center" valign="top">Griljering</td>	
+		<td align="center" valign="top">Produc 2</td>	
+		<td align="center" valign="top">Atrib 1</td>	
+		<td align="center" valign="top">Atrib 2</td>	
+		<td align="center" valign="top">Atrib 3</td>	
+		<td align="center" valign="top">Atrib 4</td>	
 	</tr>
 	<tr>
 		<td align="center" valign="top">'.$fields['form_fields']['field_2853e0a'].'</td>
@@ -309,16 +309,16 @@ function print_email($fields){
 <br />
 ';
 	}
-	//HälsoGrisskinka second item
+	//second item
 	if($fields['form_fields']['field_9b65d74'] != ''){
 		$HTML_02b = '
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
 	<tr bgcolor="#F2F2F2">
-		<td align="center" valign="top">Lättrökt</td>	
-		<td align="center" valign="top">Antal</td>	
-		<td align="center" valign="top">Önskad vikt</td>	
-		<td align="center" valign="top">Tilllagning</td>	
-		<td align="center" valign="top">Griljering</td>	
+		<td align="center" valign="top">Produc 3</td>	
+		<td align="center" valign="top">Atrib 1</td>	
+		<td align="center" valign="top"></td>	
+		<td align="center" valign="top">Atrib 2</td>	
+		<td align="center" valign="top">Atrib 3</td>	
 	</tr>
 	<tr>
 		<td align="center" valign="top">'.$fields['form_fields']['field_63f9e06'].'</td>
@@ -336,7 +336,7 @@ function print_email($fields){
         if($fields['form_fields']['field_0483d68'] != ''){
                 $HTML_03a = '   
         <tr>
-		<td align="center" valign="top">Ung Häslogris Revben</td>
+		<td align="center" valign="top">Product 4</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_9c2d4eb'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_0483d68'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_034f1cd'].'</td>
@@ -346,7 +346,7 @@ function print_email($fields){
         if($fields['form_fields']['field_206ef10'] != ''){
                 $HTML_03b = '   
         <tr>
-		<td align="center" valign="top">Häslogris Revben</td>
+		<td align="center" valign="top">Product 5</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_4a69dbd'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_206ef10'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_56c2799'].'</td>
@@ -356,7 +356,7 @@ function print_email($fields){
         if($fields['form_fields']['field_810194d'] != ''){
                 $HTML_03c = '   
         <tr>
-		<td align="center" valign="top">Prova några av våra berömda korvar</td>
+		<td align="center" valign="top">Try our products</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_bd1e493'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_810194d'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_8758389'].'</td>
@@ -366,7 +366,7 @@ function print_email($fields){
         if($fields['form_fields']['field_042f858'] != ''){
                 $HTML_03d = '   
         <tr>
-		<td align="center" valign="top">Övriga Charkuterier</td>
+		<td align="center" valign="top">Other products</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_bf0d2a8'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_042f858'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_3b84c77'].'</td>
@@ -376,7 +376,7 @@ function print_email($fields){
         if($fields['form_fields']['field_24b6796'] != ''){
                 $HTML_03e = '   
         <tr>
-		<td align="center" valign="top">För det lilla extra på julbordet som sillen, brunkål, rödkål och köttbollarna</td>
+		<td align="center" valign="top">Products for you</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_cd527a3'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_24b6796'].'</td>
                 <td align="center" valign="top">'.$fields['form_fields']['field_8f41566'].'</td>
@@ -394,10 +394,10 @@ function print_email($fields){
 <h3>Other Products</h3>
 <table width="100%" border="1" cellpadding="1" cellspacing="0">
         <tr bgcolor="#F2F2F2">
-                <td align="center" valign="top">Kategori</td>   
-                <td align="center" valign="top">Välj produkt</td>       
-                <td align="center" valign="top">Antal</td>      
-                <td align="center" valign="top">Önskad vikt</td>        
+                <td align="center" valign="top">Category</td>   
+                <td align="center" valign="top">Choose product</td>       
+                <td align="center" valign="top">Num</td>      
+                <td align="center" valign="top">Weight</td>        
         </tr>'.$HTML_03a.$HTML_03b.$HTML_03c.$HTML_03d.$HTML_03e.'
 	</table>
 	<br />
@@ -406,7 +406,7 @@ function print_email($fields){
 	$HTML_04 = "";
 	if($fields['form_fields']['field_c6a3dae'] != ''){
 		$HTML_04 = '
-<h3>Vi kan leverera till din rekoring</h3>
+<h3>Send to:</h3>
 '.$fields['form_fields']['field_c6a3dae'];
 	}
 	return $HTML_00.$HTML_01.$HTML_02.$HTML_03.$HTML_04;
